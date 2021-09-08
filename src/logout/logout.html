@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="logout.css" />
+    <link rel="stylesheet" href="../index.css" />
+    <title>logout</title>
+  </head>
+  <body onload="sendToLogin()">
+    <form onsubmit="logout()" id="login-bg">
+      <div id="icon-badge">
+        <img id="status-icon" src="../../asset/check.svg" alt="" />
+      </div>
+      <button
+        id="logout-button"
+        class="submit-login"
+        type="submit"
+        onmouseenter="onMouseEnter()"
+        onmouseleave="onMouseLeave()"
+      >
+        logout
+      </button>
+      <script src="./logout.js"></script>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+/* :root {
+  --bg-color: #184e77;
+  --fg-color: #1a759f;
+  --dark-green: #34a0a4;
+  --secondery: #52b69a;
+  --primary: #76c893;
+  --danger: #d98d8d;
+} */
+/* checkmark icon on the top */
+#icon-badge {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  background-color: var(--primary);
+  margin: 50px auto 158px auto;
+}
+#status-icon {
+  margin: 31.5px;
+  width: 127px;
+  height: 127px;
+  display: inline-block;
+}
+/* changing color on hover */
+/* #logout-button:hover {
+  background-color: var(--danger);
+} */
+#logout-button:hover {
+  background-color: var(--danger);
+}

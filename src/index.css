@@ -9,53 +9,64 @@
 }
 
 body {
-  background-color: var(--bg-color);
-  font-family: "open sans";
-  height: 100vh;
-  font-weight: bold;
+  /* spacing and sizing */
   display: flex;
+  height: 100vh;
+  /* font-settings */
+  font-family: "open sans";
+  font-weight: bold;
+  /* colorings */
+  background-color: var(--bg-color);
 }
 #login-bg {
-  background-color: var(--fg-color);
+  /* spacing and sizing */
   width: 412px;
   height: 515px;
   margin: auto;
+  /* shadow */
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 30px;
+  /* colorings */
+  background-color: var(--fg-color);
 }
-button {
+.submit-login {
+  /* spacing and sizing */
   display: block;
   width: 252px;
+  margin: auto;
   height: 76px;
-  background: var(--secondery);
-  padding: 0;
+  /* shadow */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  border: none;
+  /* font-settings */
   color: white;
   font-size: 2.6em;
   text-transform: uppercase;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 30px;
-  border: none;
-  margin: auto;
+  /* coloring */
+  background: var(--secondery);
 }
-button:active {
-  background-color: var(--primary);
+.submit-login:active {
   box-shadow: none;
+  background-color: var(--primary);
 }
-input {
+.login-input {
+  /* spacing and sizing */
   display: block;
-  border-radius: 15px;
-  border: none;
-  margin: auto;
+  margin: auto auto 30px auto;
   width: 212px;
   padding: 10px 20px;
-  background: var(--dark-green);
-  margin-bottom: 30px;
-  font-size: 2em;
+  /* border settings */
+  border-radius: 15px;
+  border: none;
+  /* font-settings */
+  font-size: 1.6em;
   color: white;
+  /* coloring */
+  background: var(--dark-green);
 }
 
-input::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
+.login-input::placeholder {
   color: white;
   opacity: 0.9;
 }
@@ -65,8 +76,8 @@ input::placeholder {
   margin: 113px auto 118px auto;
   width: 100%;
 }
-input:focus {
+.login-input:focus {
   outline: none;
-  background-color: var(--secondery);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: var(--secondery);
 }
